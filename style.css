@@ -1,0 +1,658 @@
+    /* --------------------------------------------------
+   RESET & FONT
+--------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f3;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+header.navbar {
+    width: 100%;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #006bff, #ffdd00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.pp-navbar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: white;
+    color: #006bff;
+    transform: translateY(-3px);
+}
+
+/* --------------------------------------------------
+   INTRO SECTION
+--------------------------------------------------- */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffe259, #00c6ff);
+    color: white;
+}
+
+.intro h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.intro button {
+    padding: 12px 30px;
+    background: #ffeb00;
+    border: none;
+    border-radius: 30px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.intro button:hover {
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+/* --------------------------------------------------
+   KOTAK-KOTAK SECTION
+--------------------------------------------------- */
+.kotak-section {
+    padding: 70px 50px;
+}
+
+.kotak-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #006bff;
+}
+
+.kotak-section .lead {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 17px;
+}
+
+.kotak-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.kotak {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    border-top: 5px solid #00aaff;
+}
+
+.kotak:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.kotak img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.kotak h3 {
+    color: #007cff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kotak p {
+    font-size: 14px;
+    color: #555;
+}
+
+.caption {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #888;
+    font-style: italic;
+}
+
+/* --------------------------------------------------
+   HERO SECTION
+--------------------------------------------------- */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #00c8ff, #f4e300);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* --------------------------------------------------
+   COURSES
+--------------------------------------------------- */
+.courses {
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.course {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border-top: 5px solid #007bff;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.course h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #005eff;
+}
+
+.course button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.course button:hover {
+    background: #0096ff;
+    transform: translateY(-3px);
+}
+
+.discount {
+    border-top: 5px solid #ffdd00;
+}
+
+/* --------------------------------------------------
+   BENEFITS
+--------------------------------------------------- */
+.benefits {
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.benefit {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s ease;
+    border-top: 5px solid #007bff;
+    cursor: pointer;
+}
+
+.benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.benefit .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* --------------------------------------------------
+   KONTAK FORM
+--------------------------------------------------- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border: 2px solid #e8edff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #c6d4ff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #005eff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0,94,255,0.2);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #005eff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    background: #0040b8;
+}
+
+/* --------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+footer {
+    margin-top: 40px;
+    padding: 18px 0;
+    text-align: center;
+    color: #777;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+    .intro h2,
+    .hero h1 {
+        font-size: 32px;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+.logo{
+  margin-right: 550px;
+}
+
+.about-centered {
+  padding: 70px 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-center-container {
+  max-width: 850px;
+  width: 100%;
+}
+
+.about-center-container h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--accent-blue);
+}
+
+.about-lead {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.about-features-centered {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.about-features-centered li {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+  transition: .3s ease;
+}
+
+.about-features-centered li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+}
+
+.about-features-centered strong {
+  font-size: 16px;
+  color: #1d2939;
+}
+
+.about-features-centered span {
+  display: block;
+  font-size: 13px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 830px) {
+  .about-features-centered {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-explore {
+  background: linear-gradient(135deg, #006bff, #00c6ff);
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 22px rgba(0, 140, 255, 0.35);
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-explore::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.65), transparent 60%);
+  transform: scale(0);
+  transition: 0.6s ease;
+}
+
+.btn-explore:hover::before {
+  transform: scale(1);
+}
+
+.btn-explore:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 140, 255, 0.55);
+}
+
+.btn-explore:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 6px 18px rgba(0, 140, 255, 0.35);
+}
+
+ /* ===== Tambahan desain baru ===== */
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #005eff, #00b7ff);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Card Form */
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      max-width: 550px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 2px solid #e6efff;
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      border: 1.5px solid #bcd3ff;
+      font-size: 15px;
+      transition: 0.3s;
+      outline: none;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #005eff;
+      box-shadow: 0 0 8px rgba(0, 94, 255, 0.3);
+    }
+
+    .contact-form button {
+      background: #005eff;
+      color: #fff;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      font-size: 17px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 14px rgba(0, 94, 255, 0.3);
+    }
+
+    .contact-form button:hover {
+      background: #003ec9;
+      box-shadow: 0 6px 18px rgba(0, 50, 180, 0.4);
+      transform: scale(1.03);
+    }
+
+    /* Extra Section: Contact Info */
+    .contact-info {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact-info h3 {
+      color: #005eff;
+      margin-bottom: 10px;
+    }
+    .contact-info p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Container utama contact section */
+.contact-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Form dan info dibuat kolom rapi */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Card lokasi */
+.location-card {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Map container */
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Responsive supaya tetap rapi di HP */
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .map-container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CodLab — Hubungi kami untuk informasi program, pendaftaran, dan konsultasi.">
+  <title>CodLab | Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <img src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4036.079353430548!2d101.43435857470791!3d0.5429623637087721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5abf40a2d0f0f%3A0xeca6c3f2745078e1!2sSMK%20Negeri%204%20Pekanbaru%2C%20Jl.%20Purwodadi%2C%20Pekanbaru!5e1!3m2!1sid!2sid!4v1702202000000" alt="Foto Profil" class="pp-navbar">
+  <div class="logo">CodLab</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Program</a></li>
+      <li><a href="manfaat.html">Manfaat</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+  <section class="hero">
+    <h1>Hubungi CodLab</h1>
+    <p>Kirim pesan, pertanyaan, atau konsultasi program. Kami siap membantu kamu.</p>
+  </section>
+
+  <section class="contact-section container">
+    <h2 style="text-align:center;color:#005eff;margin-bottom:10px;">Formulir Kontak</h2>
+    <p style="text-align:center;color:#555;margin-bottom:30px;">Isi data di bawah ini, tim kami akan membalas secepatnya.</p>
+
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Nomor Telepon" required>
+        <input type="text" placeholder="Username Instagram" required>
+        <textarea placeholder="Pesan atau pertanyaan kamu" rows="6" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Atau hubungi kami melalui:</h3>
+      <p>📱 WhatsApp: <strong>0877-4195-6536</strong></p>
+      <p>📧 Email: <strong>codlabteam@gmail.com</strong></p>
+    </div>
+
+    <!-- Lokasi Sekolah -->
+    <div class="location-card" style="margin-top:40px;text-align:center;">
+      <h2 style="color:#005eff;margin-bottom:10px;">Lokasi Kami</h2>
+      <p style="color:#555;margin-bottom:20px;">SMKN 4 Pekanbaru</p>
+
+      <div class="map-container" style="width:100%;max-width:800px;margin:auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6918372752084!2d101.39831667343977!3d0.4562242995393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ac60e2502ceb%3A0xc2a9f0976f58b748!2sSMKN%204%20Pekanbaru%20State%20Vocational%20School!5e0!3m2!1sen!2sid!4v1765333213760!5m2!1sen!2sid"
+          width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="container" style="padding:28px 24px;color:#6b7280;text-align:center;">
+    <p>© <span id="year"></span> CodLab. Semua hak dilindungi.</p>
+  </footer>
+</main>
+
+<script>
+  try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e){}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
